@@ -1,0 +1,128 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+table.data-grid {
+    border-collapse: collapse;
+    border-width: 1px;
+    border-radius: 3px;
+    /*border-style: hidden;*/
+    border-style: solid;
+    /*box-shadow: 0 0 0 1px #444;*/
+    /*font-size: .85em;*/
+}
+
+input.input-float-right {
+    float: right;
+}
+
+li.form-list {
+    padding-top: 10px;
+}
+
+table.data-grid .action-button {
+    cursor: pointer;
+    padding: .25em;
+}
+
+    table.data-grid .action-button:not(:last-child) {
+        margin-right: .5em;
+    }
+
+table.data-grid div.table-page-nav .action-button:not(:last-child), table.data-grid div.table-page-nav input:not(.action-button):not(:last-child) {
+    margin-right: .5em;
+}
+
+table.data-grid > tbody > tr.ui-state-error {
+    border-color: #ff0000;
+}
+
+table.data-grid > tbody > tr input.ui-state-error, table.data-grid > tbody > tr textarea.ui-state-error, table.data-grid > tbody > tr select.ui-state-error {
+    border-color: #ff0000;
+}
+
+table.data-grid > tbody > tr:not(:last-child) {
+    border-bottom-style: dotted;
+    border-bottom: dotted 1px #302a25;
+}
+
+table.data-grid > tbody > tr:last-child.data-pager {
+    border-top-style: solid;
+    border-top: solid 1px #302a25;
+}
+
+table.data-grid > tbody > tr:nth-child(even) {
+    /*background-color: #d4d9d3;*/
+    background: #e4dcd5;
+}
+
+table.data-grid > tbody > tr.user-data:hover {
+    background-color: #c7cbc6;
+}
+
+table.data-grid > tbody > tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+table.data-grid > tbody > tr > th {
+    /*background-color: #80B423;*/
+    background: #b3aca6;
+    color: #333231;
+    font-size: 1.1em;
+    padding: .5em 1em !important;
+    text-align: left;
+}
+
+table.data-grid > tbody > tr:not(.data-pager) > td input, table.data-grid > tbody > tr:not(.data-pager) > td textarea, table.data-grid > tbody > tr:not(.data-pager) > td select {
+    width: 98%;
+    vertical-align: top;
+    display: inline-block;
+    margin-top: .5em;
+}
+
+table.data-grid > tbody > tr > th, table.data-grid > tbody > tr > td {
+    padding: .5em 1em;
+    /*text-align: center;*/
+    vertical-align: top;
+}
+
+    table.data-grid > tbody > tr > th a:visited, table.data-grid > tbody > tr > td a:visited {
+        letter-spacing: 0.2px;
+        color: #0035ad;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    table.data-grid > tbody > tr > th a:link, table.data-grid > tbody > tr > td a:link {
+        font-size: .85em;
+        letter-spacing: 0.2px;
+        color: #0035ad;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    table.data-grid > tbody > tr > th:not(:last-child), table.data-grid > tbody > tr > td:not(:last-child) {
+        border-right-style: dotted;
+        border-right: dotted 1px #302a25;
+    }
+
+@media only screen and (max-width: 767px) {
+    .nofloat {
+        float: none;
+        padding: 10px 15px;
+    }
+}
